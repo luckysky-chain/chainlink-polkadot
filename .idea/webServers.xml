@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="87fe0190-21a4-4e5b-bcdd-76e95f78fd10" name="aws">
+        <fileTransfer rootFolder="/home/ec2-user/newEventParachain" accessType="SFTP" host="ec2-54-209-240-158.compute-1.amazonaws.com" port="22" sshConfigId="f7c6f958-844e-42f5-9bbf-a56d036ca158" sshConfig="ec2-user@ec2-54-209-240-158.compute-1.amazonaws.com:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
