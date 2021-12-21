@@ -1,5 +1,5 @@
-# Chainlink-polkadot
-
+# Demo:Chainlink-polkadot
+**this is the demo for chainlink-polkadot, not luckysky's parachain**
 This repository contains the [Chainlink](https://chain.link/) feed pallet as well as an example node showing how to integrate
 it in [Substrate](https://www.substrate.io/)-based chains.
 
