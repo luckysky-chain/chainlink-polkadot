@@ -35,7 +35,7 @@ decl_module! {
 		pub fn send_request(origin, operator: T::AccountId, specid: Vec<u8>) -> DispatchResult {
 			log::info!("[send_request]Start the send_request");
 			let parameters = ("get", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD", "path", "RAW.ETH.USD.PRICE", "times", "100000000"); //original chainlink demo
-			//let parameters = ("pricePair", "LINK/USD"); //from LaurentTrk
+			//let parameters = ("pair", "LINK/USD"); //from LaurentTrk
 			log::info!("[send_request]Call the send_request");
 			let call: <T as Config>::Callback = Call::callback(vec![]).into();
 
