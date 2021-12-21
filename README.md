@@ -20,12 +20,23 @@ See [the template pallet](./substrate-node-example/pallets/template/src/lib.rs) 
 
 ## Run the example
 
-`substrate-node-example` demonstrates how to use `pallet-chainlink-feed` end-to-end.
-To test:
+```Bash
+cd substrate-node-example
 
-* start the chain using `make run-temp` (for a temporary node which cleans up after itself)
-* connect to the chain by pointing https://polkadot.js.org/apps/ (or a locally hosted version) to the local dev node 
-* specify the types by copying `substrate-node-example/types.json` into the input at `Settings > Developer`
+//run
+cargo run --release -- --dev --tmp --ws-port 8844 --unsafe-ws-external --rpc-cors all
+```
+once it compile successfully, it will automatically generate new blocks
 
-You are now ready to send extrinsics to the pallet.
+## Run frontend
 
+```Bash
+cd substrate-node-example
+cd front-end
+
+//install
+yarn install
+
+//run
+yarn run start
+```
